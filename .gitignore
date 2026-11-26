@@ -1,0 +1,20 @@
+# NEVER commit credentials
+.env
+.env.*
+!.env.example
+*.key
+
+# data — too large for git, and re-derivable by running the notebook
+data/
+*.json
+!notebooks/*.ipynb
+*.csv
+*.parquet
+*.xlsx
+*.numbers
+
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+**/.DS_Store
